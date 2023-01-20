@@ -15,7 +15,19 @@ function buscarAmigo(amigos, nombre) {
 
   // Tu código aca:
   
+  
+  for (var i = 0; i < amigos.length; i++){
+    if (nombre === amigos[i].nombre ){
+       return amigos[i];
+   }
+ }
+   return 'No existe';
 }
+
+
+
+
+
 
 // No modifiques nada debajo de esta linea //
 

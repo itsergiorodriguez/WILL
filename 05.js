@@ -4,6 +4,8 @@
   código dentro de las funciones ya definidas. 
   No comentar la funcion 
 */
+
+var productos = [{ name: 'TV LCD', price: 100}, { name: 'Computadora', price: 500 }]
 function pluck(array, propiedad) {
   // La función llamada 'pluck' recibe como argumento un array de objetos llamado 'array' y el nombre de una
   // propiedad.
@@ -15,7 +17,20 @@ function pluck(array, propiedad) {
 
   // Tu código acá:
 
+var array = productos.map (x => x.name) 
+return array; 
+
+productos.pluck(productos, 'name') 
+ 
+
 }
+console.log(pluck(productos,'name'))
+
+
+
+
+
+   
 
 // No modifiques nada debajo de esta linea //
 
